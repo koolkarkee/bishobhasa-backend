@@ -3,8 +3,8 @@ var smtpConfig = {
     port : 587, 
     secure : true,  
     auth : {
-        user : "noreply@dulwa.com", 
-        pass : "Nepalese123*#"  
+        user : "bishobhashaschool@gmail.com", 
+        pass : "2019welcome"  
     }
 }
 

@@ -11,7 +11,9 @@ require('./database/db')
 const ThirdParty = require('./middlewares/thirdparty')
 ThirdParty.load(app) 
 
-//inbuilt middleware (for images, videos and other files)
+//[inbuilt middleware] (for images, videos and other files)
+app.use(express.urlencoded({ extended : true }))
+app.use(express.json())  
 //app.use(express.static('files')) //serve locally within express
 //app.use('files', express.static('files')) //serve for external request
 

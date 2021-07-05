@@ -1,10 +1,10 @@
-const Uuidv1 = require('uuid'); 
+const Uuidv4 = require('uuid').v4
 const EmailHelper = require('./../../helpers/mailer.helper')
 const EmailTemplate = require('./user.emailTemplate')
 const Config = require('./../../configs/index')
 
 function getEmailRegistrationToken(){
-    return  Uuidv1()
+    return  Uuidv4()
 }
 
 function getRegistrationBodyHtml(emailToken, id){
